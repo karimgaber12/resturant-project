@@ -1,0 +1,297 @@
+/*
+Theme name : resturant
+theme coder : karim gaber
+PSD designer : karim gaber
+*/
+/*():-===============start main header======================*/
+*{
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+#hero{
+    width: 100%;
+    height: 660px;
+    background: url("../images/bg-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgb(30, 20, 20,80%);
+}
+/*():-=================start main navigatios==================*/
+.logo{
+    color: #fff;
+    font-size: 44px;
+    font-weight: bolder;
+}
+
+a{
+    color: rgb(255, 255, 255);
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    transition: .3s;
+    color: #EB596F;
+}
+
+/*():-=================end main navigatios==================*/
+
+/*():=================strat header=====================*/
+
+.content h1{
+    font-size: 70px;
+}
+.content p{
+    font-size: 15px;
+    line-height:2;
+    width: 500px;
+}
+.content a{
+    font-size: 24px;
+    color: #FFE227;
+    border: 2px solid #FFE227;
+    padding: 10px 46px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    transition: .3s ease-in-out;
+    letter-spacing: 3px;
+}
+.content a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color:#FFE227;
+    transform-origin: left;
+    transform: scalex(0);
+    transition: .3s ease-in-out;
+    z-index: -1;
+
+}
+.content a:hover{
+    color: #111;
+    transition: .3s ease-in-out;
+}
+.content a:hover::before{
+    transform: scalex(1);
+    transition: .3s ease-in-out;
+}
+.mainContent{
+    margin-top: 10%;
+    transform: translatey(-10%);
+}
+/*():=================end header=====================*/
+
+/*():-===============end main header======================*/
+
+/*():-================start About US==================*/
+.contentAbout h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.contentAbout h2::first-letter{
+    font-size: 50px;
+    color: #FFE227;
+}
+.contentAbout span{
+    color:#EB596F;
+    font-size: 19px;
+}
+.contentAbout p{
+    font-size: 18px;
+    line-height: 2;
+}
+.imageAbout{
+    position: relative;
+    height: 400px;
+}
+.imageAbout img{
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px 2px #EB596F;
+}
+/*():-================end About US==================*/
+
+.card{
+    box-shadow: 0 0 10px 0 #4D375D;
+    margin: 50px 40px 0 0;
+}
+.card h5{
+    font-size: 25px;
+    color: #EB596F;
+    font-weight: bold;
+    margin: 0;
+}
+.card-img-top{
+    border: none;
+}
+/*():-================end About US==================*/
+
+/*():-================start Our Menu==================*/
+.container h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.container h2 span{
+    font-size: 50px;
+    color: #FFE227;
+}
+.container span{
+    color:#EB596F;
+    font-size: 19px;
+
+}
+/*():-================end Our Menu==================*/
+
+/*():-================start Experts==================*/
+/*():-====Swiper.js===*/
+#Experts{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Experts h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+#Experts h2 span{
+    font-size: 50px;
+    color: #FFE227;
+}
+#Experts span{
+    color:#EB596F;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.Experts{
+    overflow: hidden;
+}
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    background: #000;
+  }
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide h3{
+    font-size: 30px;
+    color: #EB596F;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+/*():-================end Experts==================*/
+
+/*():-================start Contact us==================*/
+#ContactUs{
+    background:#212329;
+}
+#ContactUs h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+#ContactUs h2 span{
+    font-size: 50px;
+    color: #EB596F;
+}
+#ContactUs span{
+    color:#fff;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+/*():-================end Contact us==================*/
+
+
+/*responsive*/
+
+@media(max-width:780px){
+
+    /*responsive header*/
+
+    a{
+        margin-right: -0.9rem;
+    }
+    .content h1{
+        font-size: 50px;
+    }
+
+    .mainContent{
+        margin-top: 30%;
+        transform: translatey(-30%);
+    }
+    
+    .imageAbout::before{
+        font-size: 40px;
+    }
+
+    
+
+}
+
+@media(max-width:575px){
+
+    /*responsive header*/
+    .navbar-nav{
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link{
+        color: #eb596f9a;
+        padding: 20px;
+        font-weight: bold;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover{
+        color: #eb596f;
+        transition: .3s;
+    }
+    .content h1{
+        font-size: 50px;
+    }
+
+    .mainContent{
+        margin-top: 50%;
+        transform: translatey(-50%);
+    }
+
+    .imageAbout::before{
+        font-size: 40px;
+    }
+    
+    .card{
+        margin: 50px 0 0 0;
+    }
+    
+}
+
